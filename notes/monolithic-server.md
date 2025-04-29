@@ -25,13 +25,13 @@ server.boot();
 
 The `host` option is optional and specifies the hostname the server will listen on. Its default value is `0.0.0.0`, meaning it will listen on all interfaces.
 
-The server does not allow users to sign up, out of the box. If you need to allow that, use the `allow_signup` option:
+The server does not allow users to sign up, out of the box. If you need to allow that, use the `signup` option:
 ```js
 
 var server = new Armadietto({
   store: store,
   http:  { host: '127.0.0.1', port: 8000 },
-  allow_signup: true
+  allow: {signup: true}
 });
 ```
 
